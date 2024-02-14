@@ -306,10 +306,144 @@ Summary:-
 
 
 
-
-
-
 ### ▶ Lists 
+
+Definition:
+
+A list in Python is a collection of items or elements enclosed within square brackets []. Lists are ordered, mutable (modifiable), and can contain elements of different data types. </br>
+
+Creating Lists: Lists can be created by placing comma-separated values within square brackets [].</br>
+```
+# Creating a list
+my_list = [1, 2, 3, 4, 5]
+print(my_list)   # Output: [1, 2, 3, 4, 5]
+
+# Lists can contain elements of different data types
+mixed_list = [1, "hello", True, 3.14]
+print(mixed_list)   # Output: [1, 'hello', True, 3.14]
+
+```
+Accessing Elements:
+
+You can access individual elements in a list using indexing. Indexing starts from 0 for the first element and goes up to len(list) - 1 for the last element. </br>
+
+```
+# Accessing elements
+my_list = [10, 20, 30, 40, 50]
+print("First element:", my_list[0])   # Output: 10
+print("Last element:", my_list[-1])   # Output: 50
+
+```
+Slicing Lists:
+
+You can extract a sublist (slice) from a list using slicing notation [start:end:step]. </br>
+
+```
+# Slicing
+my_list = [10, 20, 30, 40, 50]
+print("Slice:", my_list[1:4])   # Output: [20, 30, 40]
+print("Reverse slice:", my_list[::-1])   # Output: [50, 40, 30, 20, 10]
+
+```
+Modifying Lists:
+
+Lists are mutable, meaning you can change their elements after creation.</br>
+
+```
+# Modifying elements
+my_list = [10, 20, 30, 40, 50]
+my_list[2] = 35
+print("Modified list:", my_list)   # Output: [10, 20, 35, 40, 50]
+
+# Appending elements
+my_list.append(60)
+print("Appended list:", my_list)   # Output: [10, 20, 35, 40, 50, 60]
+
+# Removing elements
+my_list.remove(35)
+print("List after removing element:", my_list)   # Output: [10, 20, 40, 50, 60]
+
+# Inserting elements at a specific position
+my_list.insert(2, 25)
+print("List after insertion:", my_list)   # Output: [10, 20, 25, 40, 50, 60]
+
+# Deleting elements by index
+del my_list[3]
+print("List after deletion:", my_list)   # Output: [10, 20, 25, 50, 60]
+
+```
+List Operations:
+
+Concatenation (+): Combining two lists. </br>
+Repetition (*): Repeating a list multiple times. </br>
+
+```
+# Concatenation
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+concatenated_list = list1 + list2
+print("Concatenated list:", concatenated_list)   # Output: [1, 2, 3, 4, 5, 6]
+
+# Repetition
+repeated_list = [0] * 3
+print("Repeated list:", repeated_list)   # Output: [0, 0, 0]
+```
+
+List Methods:
+
+Python provides various built-in methods for performing common operations on lists, such as adding, removing, sorting, and searching elements. </br>
+
+```
+my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5]
+
+# Adding elements
+my_list.append(7)      # Append an element to the end
+my_list.insert(2, 8)   # Insert an element at a specific position
+
+# Removing elements
+my_list.remove(5)      # Remove the first occurrence of an element
+popped_element = my_list.pop()    # Remove and return the last element
+my_list.pop(3)         # Remove the element at index 3
+
+# Sorting
+my_list.sort()         # Sort the list in ascending order
+my_list.sort(reverse=True)   # Sort the list in descending order
+sorted_list = sorted(my_list)   # Return a sorted copy of the list without modifying the original list
+
+# Searching
+index_of_4 = my_list.index(4)   # Get the index of the first occurrence of an element
+count_of_5 = my_list.count(5)    # Count the number of occurrences of an element
+
+# Copying
+copied_list = my_list.copy()     # Make a shallow copy of the list
+
+# Clearing
+my_list.clear()        # Remove all elements from the list
+
+```
+List Comprehensions:
+
+List comprehensions provide a concise way to create lists based on existing lists. </br>
+
+
+```
+# List comprehension to create a list of squares
+squares = [x**2 for x in range(1, 6)]
+print("Squares:", squares)   # Output: [1, 4, 9, 16, 25]
+```
+
+Summary: 
+
+1.	Lists in Python are ordered, mutable collections of elements. </br>
+2.	Lists can contain elements of different data types. </br>
+3.	Accessing elements in a list is done using indexing and slicing. </br>
+4.	Lists support various operations such as appending, removing, sorting, and searching elements. </br>
+5.	List comprehensions provide a concise way to create lists based on existing lists. </br>
+
+
+
+
+
 ### ▶ tuples
 ### ▶ Dictionaries
 
