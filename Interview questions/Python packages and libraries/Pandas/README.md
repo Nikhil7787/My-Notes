@@ -1,6 +1,57 @@
 # Pandas
 
-Here are some attributes of a DataFrame object in pandas:
+
+
+### functions in pandas for data manipulation and analysis: </br>
+
+1.	Data Input/Output: </br>
+•	read_csv(): Read a CSV file into a DataFrame. </br>
+•	read_excel(): Read an Excel file into a DataFrame. </br>
+•	read_sql(): Read from a SQL database into a DataFrame. </br>
+•	to_csv(): Write a DataFrame to a CSV file. </br>
+•	to_excel(): Write a DataFrame to an Excel file. </br>
+•	to_sql(): Write a DataFrame to a SQL database. </br>
+2.	Data Exploration: </br>
+•	head(): View the first few rows of a DataFrame. </br>
+•	tail(): View the last few rows of a DataFrame. </br>
+•	info(): View a concise summary of a DataFrame. </br>
+•	describe(): Generate descriptive statistics of a DataFrame. </br>
+•	shape: Get the dimensions of a DataFrame (rows, columns). </br>
+3.	Data Selection/Manipulation: </br>
+•	loc[]: Access a group of rows and columns by label(s). </br>
+•	iloc[]: Access a group of rows and columns by integer position(s). </br>
+•	at[]: Access a single value for a row/column label pair. </br>
+•	iat[]: Access a single value for a row/column pair by integer position. </br>
+•	drop(): Drop specified rows or columns from a DataFrame. </br>
+•	fillna(): Fill missing values in a DataFrame. </br>
+•	replace(): Replace values in a DataFrame. </br>
+4.	Data Aggregation/Grouping: </br>
+•	groupby(): Group DataFrame using a mapper or by a Series of columns. </br>
+•	agg(): Aggregate using one or more operations over specified axis. </br>
+•	pivot_table(): Create a spreadsheet-style pivot table as a DataFrame. </br>
+5.	Data Cleaning/Preprocessing: </br>
+•	drop_duplicates(): Remove duplicate rows from a DataFrame. </br>
+•	astype(): Cast a pandas object to a specified dtype. </br>
+•	rename(): Rename columns or index in a DataFrame. </br>
+•	sort_values(): Sort DataFrame by one or more columns. </br>
+6.	Data Visualization: </br>
+•	plot(): Plot data. </br>
+•	hist(): Draw histogram of DataFrame's columns. </br>
+•	boxplot(): Make a box plot of the DataFrame columns. </br>
+•	scatter(): Make a scatter plot of two columns. </br>
+7.	Data Concatenation/Merging: </br>
+•	concat(): Concatenate pandas objects along a particular axis. </br>
+•	merge(): Merge DataFrame or named Series objects with a database-style join. </br>
+8.	Data Reshaping: </br>
+•	melt(): Unpivot a DataFrame from wide format to long format. </br>
+•	pivot(): Return reshaped DataFrame organized by given index / column values. </br>
+•	stack(): Stack the prescribed level(s) from columns to index. 
+
+<be>
+<br>
+<br>
+
+### Here are some attributes of a DataFrame object in pandas:
 
 1.	**index**: The row labels of the DataFrame. </br>
 2.	**columns**: The column labels of the DataFrame. </br>
